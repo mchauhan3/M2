@@ -1,27 +1,5 @@
 apply plugin: 'java'
-apply plugin: 'application'
 defaultTasks 'jar'
-
-//set up some variables
-sourceCompatibility = 1.8
-version = '1.0'
-mainClassName='AntLabMain'
-
-compileJava{
-    println "compiling"
-}
-
-compileTestJava{
-    println "testing"
-}
-
-javadoc {
-    source = sourceSets.main.allJava
-}
-
-clean {
-
-}
 
 jar {
     baseName = 'M2'
