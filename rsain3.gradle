@@ -8,11 +8,15 @@ version = '1.0'
 mainClassName='AntLabMain'
 
 compileJava{
-
+    println "compiling"
 }
 
 compileTestJava{
+    println "testing"
+}
 
+javadoc {
+    source = sourceSets.main.allJava
 }
 
 clean {
@@ -20,6 +24,7 @@ clean {
 }
 
 jar {
+    baseName = 'M2'
     manifest {
         attributes("Class-Path": "../../lib/resources.jar", "Main-Class": "edu.gatech.oad.antlab.pkg1.AntLabMain")
     }
