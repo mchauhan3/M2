@@ -10,6 +10,6 @@ jar {
     manifest {
          attributes 'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
          'Class-Path': '/lib/resources.jar',
-         'Implementation-Title': 'vrajasekar6_GRADLEBUILD'
+         'Implementation-Title': 'vrajasekar6_GR'
     }
 }
