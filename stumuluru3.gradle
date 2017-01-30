@@ -8,10 +8,10 @@ jar  {
      attributes  'Implementation-Title' : 'stumuluru3build' ,
                  'Implementation-Version' : version,
                  'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain',
-				 'Class-Path' : '/lib/resources.jar'                 
+				 'Class-Path' : '../../lib/resources.jar'
     }
 }
 
 dependencies {
-    compile files('/lib/resources.jar')
+    compile files('lib/resources.jar')
 }
